@@ -1,0 +1,211 @@
+# =============================================================================
+# docker-compose.yml — Full Stack Orchestration
+# Set ACTIVE_STACK in .env to: stack1 | stack2 | stack3 | stack4
+# =============================================================================
+
+version: "3.9"
+
+# ---------------------------------------------------------------------------
+# Shared infrastructure (all stacks)
+# ---------------------------------------------------------------------------
+services:
+
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-appuser}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+      POSTGRES_DB: ${POSTGRES_DB:-appdb}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-appuser} -d ${POSTGRES_DB:-appdb}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  nginx:
+    image: nginx:1.25-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./infra/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./infra/nginx/conf.d:/etc/nginx/conf.d:ro
+    depends_on:
+      - frontend-nextjs
+      - backend-fastapi
+    profiles:
+      - stack1
+      - stack2
+      - stack4
+
+# ---------------------------------------------------------------------------
+# Stack 1: Next.js + FastAPI + PostgreSQL + Redis
+# ---------------------------------------------------------------------------
+
+  frontend-nextjs:
+    build:
+      context: .
+      dockerfile: apps/frontend-nextjs/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_API_URL: http://backend-fastapi:8000
+    depends_on:
+      backend-fastapi:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    profiles:
+      - stack1
+      - stack2
+
+  backend-fastapi:
+    build:
+      context: .
+      dockerfile: apps/backend-fastapi/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-appuser}:${POSTGRES_PASSWORD:-secret}@postgres:5432/${POSTGRES_DB:-appdb}
+      REDIS_URL: redis://redis:6379/0
+      SECRET_KEY: ${SECRET_KEY:-changeme-in-production}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    profiles:
+      - stack1
+
+# ---------------------------------------------------------------------------
+# Stack 3: SvelteKit + Go/Gin + PostgreSQL
+# ---------------------------------------------------------------------------
+
+  frontend-sveltekit:
+    build:
+      context: .
+      dockerfile: apps/frontend-sveltekit/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      PUBLIC_API_URL: http://backend-go:8002
+    depends_on:
+      backend-go:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3001/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    profiles:
+      - stack3
+
+  backend-go:
+    build:
+      context: .
+      dockerfile: apps/backend-go/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-appuser}:${POSTGRES_PASSWORD:-secret}@postgres:5432/${POSTGRES_DB:-appdb}?sslmode=disable
+      PORT: "8002"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8002/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    profiles:
+      - stack3
+
+# ---------------------------------------------------------------------------
+# Stack 4: Vite + React + NestJS + PostgreSQL
+# ---------------------------------------------------------------------------
+
+  frontend-vite-react:
+    build:
+      context: .
+      dockerfile: apps/frontend-vite-react/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3002:80"
+    depends_on:
+      backend-nestjs:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:80/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    profiles:
+      - stack4
+
+  backend-nestjs:
+    build:
+      context: .
+      dockerfile: apps/backend-nestjs/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://${POSTGRES_USER:-appuser}:${POSTGRES_PASSWORD:-secret}@postgres:5432/${POSTGRES_DB:-appdb}
+      PORT: "8001"
+      JWT_SECRET: ${JWT_SECRET:-changeme-in-production}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    profiles:
+      - stack4
+
+# ---------------------------------------------------------------------------
+# Volumes
+# ---------------------------------------------------------------------------
+volumes:
+  postgres-data:
+  redis-data:

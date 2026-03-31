@@ -1,0 +1,20 @@
+{
+  "name": "agentic-project-template",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/frontend-nextjs",
+    "apps/frontend-sveltekit",
+    "apps/frontend-vite-react",
+    "apps/backend-nestjs",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:stack1": "docker compose -f docker-compose.yml -f docker-compose.dev.yml --profile stack1 up",
+    "dev:stack3": "docker compose -f docker-compose.yml -f docker-compose.dev.yml --profile stack3 up",
+    "dev:stack4": "docker compose -f docker-compose.yml -f docker-compose.dev.yml --profile stack4 up",
+    "build": "docker compose build",
+    "up": "docker compose --profile ${ACTIVE_STACK:-stack1} up",
+    "down": "docker compose down"
+  }
+}

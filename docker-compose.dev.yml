@@ -1,0 +1,53 @@
+# =============================================================================
+# docker-compose.dev.yml — Development Overrides
+# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up
+# Adds hot-reload volume mounts and dev-friendly settings
+# =============================================================================
+
+version: "3.9"
+
+services:
+
+  frontend-nextjs:
+    build:
+      target: builder
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./apps/frontend-nextjs/src:/app/src
+      - ./apps/frontend-nextjs/public:/app/public
+      - ./packages:/packages
+    command: npm run dev
+
+  backend-fastapi:
+    environment:
+      ENVIRONMENT: development
+    volumes:
+      - ./apps/backend-fastapi/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend-sveltekit:
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./apps/frontend-sveltekit/src:/app/src
+    command: npm run dev -- --host 0.0.0.0
+
+  backend-go:
+    volumes:
+      - ./apps/backend-go:/app
+    command: air -c .air.toml
+
+  frontend-vite-react:
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./apps/frontend-vite-react/src:/app/src
+    command: npm run dev -- --host 0.0.0.0
+
+  backend-nestjs:
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./apps/backend-nestjs/src:/app/src
+    command: npm run start:dev

@@ -1,0 +1,38 @@
+# Environment
+.env
+*.local
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build outputs
+.next/
+.svelte-kit/
+dist/
+build/
+out/
+
+# Go
+*.exe
+*.test
+vendor/
+
+# Docker
+*.log
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/

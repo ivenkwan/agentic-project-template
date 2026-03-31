@@ -1,0 +1,17 @@
+.git
+.gitignore
+node_modules
+__pycache__
+*.pyc
+.venv
+.env
+*.log
+.DS_Store
+dist
+build
+.next
+.svelte-kit
+coverage
+docs
+*.md
+!apps/*/README.md
