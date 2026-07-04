@@ -1,0 +1,242 @@
+{
+  "Z:\\GITHUB\\agentic-project-template\\apps\\backend-fastapi\\app\\main.py": {
+    "mtime": 1774973020.8364449,
+    "ast_hash": "4f040d1b254d3d6a66b7292b388ce1f1",
+    "semantic_hash": "4f040d1b254d3d6a66b7292b388ce1f1"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\backend-go\\cmd\\server\\main.go": {
+    "mtime": 1774973020.7994406,
+    "ast_hash": "efcdf15fabd71f7db5b5a9bfc9ea4058",
+    "semantic_hash": "efcdf15fabd71f7db5b5a9bfc9ea4058"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\backend-go\\go.mod": {
+    "mtime": 1774973167.0829031,
+    "ast_hash": "4cab77b997b3ec92b602f4e9894f5fe0",
+    "semantic_hash": "4cab77b997b3ec92b602f4e9894f5fe0"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\backend-nestjs\\src\\app.module.ts": {
+    "mtime": 1774973166.957117,
+    "ast_hash": "b775fde8b28e1860d435d9d01d5ea77d",
+    "semantic_hash": "b775fde8b28e1860d435d9d01d5ea77d"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\backend-nestjs\\src\\health.controller.ts": {
+    "mtime": 1774973167.1361785,
+    "ast_hash": "092f0b9253013a412687bb99acf7888a",
+    "semantic_hash": "092f0b9253013a412687bb99acf7888a"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\backend-nestjs\\src\\main.ts": {
+    "mtime": 1774973167.19724,
+    "ast_hash": "0d78b37bdf415dd8751b0ca5dfac39cc",
+    "semantic_hash": "0d78b37bdf415dd8751b0ca5dfac39cc"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\frontend-sveltekit\\src\\routes\\+page.svelte": {
+    "mtime": 1774973020.8972087,
+    "ast_hash": "509d49f97c31f6cf3dd2937c875eecd2",
+    "semantic_hash": "509d49f97c31f6cf3dd2937c875eecd2"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\frontend-vite-react\\src\\App.tsx": {
+    "mtime": 1774973020.8714418,
+    "ast_hash": "1d11b7ec2964333dfa5a2c4a6ae625a1",
+    "semantic_hash": "1d11b7ec2964333dfa5a2c4a6ae625a1"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\infra\\postgres\\init.sql": {
+    "mtime": 1774973166.9813845,
+    "ast_hash": "e2f263829fb6476d914e2ab3e12ef22f",
+    "semantic_hash": "e2f263829fb6476d914e2ab3e12ef22f"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\package.json": {
+    "mtime": 1774973167.6196558,
+    "ast_hash": "473c9122ce7118b128ee401e62a3dde6",
+    "semantic_hash": "473c9122ce7118b128ee401e62a3dde6"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\packages\\shared-types\\src\\index.ts": {
+    "mtime": 1774973167.0333896,
+    "ast_hash": "f99b87a5d1fc1f9a16c132260e23786b",
+    "semantic_hash": "f99b87a5d1fc1f9a16c132260e23786b"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\api-scaffold\\SKILL.md": {
+    "mtime": 1774973149.1974375,
+    "ast_hash": "01f42733dc615d61cfa00125e9b3e185",
+    "semantic_hash": "01f42733dc615d61cfa00125e9b3e185"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\code-review\\SKILL.md": {
+    "mtime": 1774973149.2364695,
+    "ast_hash": "ab9f1b03a7e831019a7a33ec95dcc416",
+    "semantic_hash": "ab9f1b03a7e831019a7a33ec95dcc416"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\create-product-requirements-document\\SKILL.md.md": {
+    "mtime": 1781966553.091802,
+    "ast_hash": "0518a27dd83461be0b7ca91b107fe1f4",
+    "semantic_hash": "0518a27dd83461be0b7ca91b107fe1f4"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\create-product-requirements-document\\reference\\example-prd.md.md": {
+    "mtime": 1781967219.621221,
+    "ast_hash": "1a73b338c40374339fba539b38036c47",
+    "semantic_hash": "1a73b338c40374339fba539b38036c47"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\data-exploration\\SKILL.md.md": {
+    "mtime": 1781967741.469942,
+    "ast_hash": "eb9040938f18a1041c9d2d3f48e31b2b",
+    "semantic_hash": "eb9040938f18a1041c9d2d3f48e31b2b"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\dataviz\\SKILL.md.md": {
+    "mtime": 1781971258.728242,
+    "ast_hash": "b085211eafd03b7f4c02ff8baa4cc794",
+    "semantic_hash": "b085211eafd03b7f4c02ff8baa4cc794"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\dataviz\\reference\\Chart-Standards.md": {
+    "mtime": 1781969777.916682,
+    "ast_hash": "da0b031104d796eeffca05a2bd5bf7a9",
+    "semantic_hash": "da0b031104d796eeffca05a2bd5bf7a9"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\dataviz\\reference\\format-templates.md": {
+    "mtime": 1781969268.2489026,
+    "ast_hash": "061f2aeef82f97d4f5455e20fe816d6d",
+    "semantic_hash": "061f2aeef82f97d4f5455e20fe816d6d"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\dataviz\\reference\\interaction-and-accessibility.md": {
+    "mtime": 1781968835.2395327,
+    "ast_hash": "2d22b00b8913c5c0572e0efec600bd7c",
+    "semantic_hash": "2d22b00b8913c5c0572e0efec600bd7c"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\dataviz\\reference\\map-standards.md": {
+    "mtime": 1781969973.1592085,
+    "ast_hash": "e62919131bb00eb7c5943de0ce47a901",
+    "semantic_hash": "e62919131bb00eb7c5943de0ce47a901"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\dataviz\\reference\\output-contract.md": {
+    "mtime": 1781970136.5700567,
+    "ast_hash": "f0afa959eb6c082ce561567cf5c15289",
+    "semantic_hash": "f0afa959eb6c082ce561567cf5c15289"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\db-migration\\SKILL.md": {
+    "mtime": 1774973149.2174191,
+    "ast_hash": "5bc5e3140723ea1ba09d48d829c8536c",
+    "semantic_hash": "5bc5e3140723ea1ba09d48d829c8536c"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\docker-setup\\SKILL.md": {
+    "mtime": 1774973148.4970343,
+    "ast_hash": "6b4be3deb68531901623092a768df9f7",
+    "semantic_hash": "6b4be3deb68531901623092a768df9f7"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\frontend-scaffold\\SKILL.md": {
+    "mtime": 1774973149.1784482,
+    "ast_hash": "3ee17706673996070f26b9091d70a5bb",
+    "semantic_hash": "3ee17706673996070f26b9091d70a5bb"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\skills\\tdd-workflow\\SKILL.md": {
+    "mtime": 1774973149.2559767,
+    "ast_hash": "6b6b454f7324d96c54209c6ab42a3fdb",
+    "semantic_hash": "6b6b454f7324d96c54209c6ab42a3fdb"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\workflows\\commit.md": {
+    "mtime": 1774973148.555622,
+    "ast_hash": "ed7a694e8a763209d9c4f5e990c6bb46",
+    "semantic_hash": "ed7a694e8a763209d9c4f5e990c6bb46"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\workflows\\plan.md": {
+    "mtime": 1774973146.9729557,
+    "ast_hash": "33e745971913dbf7e717dd8ff792b006",
+    "semantic_hash": "33e745971913dbf7e717dd8ff792b006"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.agent\\workflows\\review.md": {
+    "mtime": 1774973148.51804,
+    "ast_hash": "298ed6478bd16ea8b1eb8c7beeb09631",
+    "semantic_hash": "298ed6478bd16ea8b1eb8c7beeb09631"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.github\\workflows\\docker-publish.yml": {
+    "mtime": 1774973852.2226787,
+    "ast_hash": "7c10ecf18e4f2839f07db5f9ebdfcbc4",
+    "semantic_hash": "7c10ecf18e4f2839f07db5f9ebdfcbc4"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.roo\\rules-architect\\01-architect-rules.md": {
+    "mtime": 1774973145.445025,
+    "ast_hash": "ab8af30be075eb49eb584a5c3d973966",
+    "semantic_hash": "ab8af30be075eb49eb584a5c3d973966"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.roo\\rules-code\\01-code-rules.md": {
+    "mtime": 1774973145.42902,
+    "ast_hash": "ab5daa9b61a5b30d7f6b41cff75882b9",
+    "semantic_hash": "ab5daa9b61a5b30d7f6b41cff75882b9"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.roo\\rules-debug\\01-debug-rules.md": {
+    "mtime": 1774973145.4120207,
+    "ast_hash": "8c7a0284f7d5a9f6af57d586a519bc50",
+    "semantic_hash": "8c7a0284f7d5a9f6af57d586a519bc50"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.roo\\rules-orchestrator\\01-orchestrator-rules.md": {
+    "mtime": 1774973146.9919522,
+    "ast_hash": "ebfed47f0795365e96f4e4d2077f6ae6",
+    "semantic_hash": "ebfed47f0795365e96f4e4d2077f6ae6"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.roo\\rules\\01-project-context.md": {
+    "mtime": 1774973136.858437,
+    "ast_hash": "c3755cbdd8dee17d3a939b663307fd10",
+    "semantic_hash": "c3755cbdd8dee17d3a939b663307fd10"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.roo\\rules\\02-coding-standards.md": {
+    "mtime": 1774973145.4825323,
+    "ast_hash": "a51b766786845a9f3004817045498857",
+    "semantic_hash": "a51b766786845a9f3004817045498857"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\.roo\\rules\\03-docker-rules.md": {
+    "mtime": 1774973145.4645321,
+    "ast_hash": "f395d66b9d2a1866fe13e88182069bd7",
+    "semantic_hash": "f395d66b9d2a1866fe13e88182069bd7"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\AGENT.md": {
+    "mtime": 1770907568.5918906,
+    "ast_hash": "6c15a65013c391243e2d8348e2bf9cbc",
+    "semantic_hash": "6c15a65013c391243e2d8348e2bf9cbc"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\AGENTS.md": {
+    "mtime": 1774973149.1399004,
+    "ast_hash": "ff2296990c3969c51c504d4d05758ccb",
+    "semantic_hash": "ff2296990c3969c51c504d4d05758ccb"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\Agentic_AI_Governance_Policy.md": {
+    "mtime": 1776512988.926597,
+    "ast_hash": "eccaf9f36093b76008daabf37f85f842",
+    "semantic_hash": "eccaf9f36093b76008daabf37f85f842"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\GEMINI.md": {
+    "mtime": 1774973149.1179004,
+    "ast_hash": "6dc2876a16bf1972ef151493921d8462",
+    "semantic_hash": "6dc2876a16bf1972ef151493921d8462"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\README.md": {
+    "mtime": 1774973044.9132044,
+    "ast_hash": "598d6716befd83a8e49090f05cab6fef",
+    "semantic_hash": "598d6716befd83a8e49090f05cab6fef"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\apps\\backend-fastapi\\requirements.txt": {
+    "mtime": 1774973167.532586,
+    "ast_hash": "6807db336a08b23679cea0bcbc3934f6",
+    "semantic_hash": "6807db336a08b23679cea0bcbc3934f6"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\docker-compose.dev.yml": {
+    "mtime": 1774973149.0443864,
+    "ast_hash": "317e02584a1e33a8f92f39b355fc3d81",
+    "semantic_hash": "317e02584a1e33a8f92f39b355fc3d81"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\docker-compose.yml": {
+    "mtime": 1774973149.0813863,
+    "ast_hash": "0369dba793b0a87ca3745f646885dc24",
+    "semantic_hash": "0369dba793b0a87ca3745f646885dc24"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\docs\\architecture.md": {
+    "mtime": 1774973167.6818926,
+    "ast_hash": "e931f1b789aecb1d45ec55ecee7d6133",
+    "semantic_hash": "e931f1b789aecb1d45ec55ecee7d6133"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\docs\\backlog.md": {
+    "mtime": 1774973167.7048938,
+    "ast_hash": "5121ecbf36f4c897371e4e00e319355f",
+    "semantic_hash": "5121ecbf36f4c897371e4e00e319355f"
+  },
+  "Z:\\GITHUB\\agentic-project-template\\security.md": {
+    "mtime": 1782526092.7657707,
+    "ast_hash": "6301463b6307ef33aaa3a10400cf0be2",
+    "semantic_hash": "6301463b6307ef33aaa3a10400cf0be2"
+  }
+}

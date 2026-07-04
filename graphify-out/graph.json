@@ -1,0 +1,2635 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "four_stacks_hyperedge",
+        "label": "Four Full-Stack Configurations",
+        "nodes": [
+          "stack1",
+          "stack2",
+          "stack3",
+          "stack4"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "README.md"
+      },
+      {
+        "id": "agent_modes_hyperedge",
+        "label": "Roo Code Agent Modes",
+        "nodes": [
+          "orchestrator_mode",
+          "architect_mode",
+          "coder_mode",
+          "debug_mode",
+          "devops_mode",
+          "skill_creator_mode"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "README.md"
+      },
+      {
+        "id": "shared_infrastructure_hyperedge",
+        "label": "Shared Infrastructure Services",
+        "nodes": [
+          "postgresql_database",
+          "redis_cache",
+          "nginx_proxy"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "docker-compose.yml"
+      },
+      {
+        "id": "dataviz_references_hyperedge",
+        "label": "DataViz Reference Standards",
+        "nodes": [
+          "chart_standards",
+          "map_standards",
+          "interaction_accessibility",
+          "dataviz_format_templates",
+          "dataviz_output_contract"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": ".agent/skills/dataviz/SKILL.md.md"
+      },
+      {
+        "id": "agent_workflows_hyperedge",
+        "label": "Agent Slash Command Workflows",
+        "nodes": [
+          "workflow_plan",
+          "workflow_commit",
+          "workflow_review"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": ".agent/workflows"
+      },
+      {
+        "id": "governance_frameworks_hyperedge",
+        "label": "Governance & Security Frameworks",
+        "nodes": [
+          "iso_27001",
+          "iso_38505",
+          "owasp_top10"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "security.md"
+      },
+      {
+        "id": "backend_implementations_hyperedge",
+        "label": "All Backend Implementations",
+        "nodes": [
+          "fastapi_backend",
+          "nestjs_backend",
+          "go_backend"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "README.md"
+      },
+      {
+        "id": "db_migration_tools_hyperedge",
+        "label": "Database Migration Tools",
+        "nodes": [
+          "alembic_migrations",
+          "prisma_migrations",
+          "golang_migrate"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": ".agent/skills/db-migration/SKILL.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_main",
+      "community": 11,
+      "norm_label": "main.py"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "app_main_health",
+      "community": 11,
+      "norm_label": "health()"
+    },
+    {
+      "label": "root()",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "app_main_root",
+      "community": 11,
+      "norm_label": "root()"
+    },
+    {
+      "label": "main.go",
+      "file_type": "code",
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "server_main",
+      "community": 15,
+      "norm_label": "main.go"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "server_main_main",
+      "community": 15,
+      "norm_label": "main()"
+    },
+    {
+      "label": "github.com/your-org/agentic-project-template/backend-go",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "go",
+      "source_file": "apps/backend-go/go.mod",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pkg_github_com_your_org_agentic_project_template_backend_go",
+      "community": 24,
+      "norm_label": "github.com/your-org/agentic-project-template/backend-go"
+    },
+    {
+      "label": "app.module.ts",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app_module",
+      "community": 6,
+      "norm_label": "app.module.ts"
+    },
+    {
+      "label": "AppModule",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_app_module_appmodule",
+      "community": 6,
+      "norm_label": "appmodule"
+    },
+    {
+      "label": "health.controller.ts",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/health.controller.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_health_controller",
+      "community": 6,
+      "norm_label": "health.controller.ts"
+    },
+    {
+      "label": "HealthController",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/health.controller.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_health_controller_healthcontroller",
+      "community": 6,
+      "norm_label": "healthcontroller"
+    },
+    {
+      "label": ".health()",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/health.controller.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_health_controller_healthcontroller_health",
+      "community": 6,
+      "norm_label": ".health()"
+    },
+    {
+      "label": "main.ts",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_main",
+      "community": 6,
+      "norm_label": "main.ts"
+    },
+    {
+      "label": "bootstrap()",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_main_bootstrap",
+      "community": 6,
+      "norm_label": "bootstrap()"
+    },
+    {
+      "label": "+page.svelte",
+      "file_type": "code",
+      "source_file": "apps/frontend-sveltekit/src/routes/+page.svelte",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "routes_page",
+      "community": 26,
+      "norm_label": "+page.svelte"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "apps/frontend-vite-react/src/App.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app",
+      "community": 16,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "apps/frontend-vite-react/src/App.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app_app",
+      "community": 16,
+      "norm_label": "app()"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 4,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 4,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_version",
+      "community": 4,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 4,
+      "norm_label": "private"
+    },
+    {
+      "label": "workspaces",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_workspaces",
+      "community": 4,
+      "norm_label": "workspaces"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 4,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev:stack1",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "package_scripts_dev_stack1",
+      "community": 4,
+      "norm_label": "dev:stack1"
+    },
+    {
+      "label": "dev:stack3",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "package_scripts_dev_stack3",
+      "community": 4,
+      "norm_label": "dev:stack3"
+    },
+    {
+      "label": "dev:stack4",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_scripts_dev_stack4",
+      "community": 4,
+      "norm_label": "dev:stack4"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 4,
+      "norm_label": "build"
+    },
+    {
+      "label": "up",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "package_scripts_up",
+      "community": 4,
+      "norm_label": "up"
+    },
+    {
+      "label": "down",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "package_scripts_down",
+      "community": 4,
+      "norm_label": "down"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_index",
+      "community": 9,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_index_user",
+      "community": 9,
+      "norm_label": "user"
+    },
+    {
+      "label": "ApiResponse",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_index_apiresponse",
+      "community": 9,
+      "norm_label": "apiresponse"
+    },
+    {
+      "label": "ApiError",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_index_apierror",
+      "community": 9,
+      "norm_label": "apierror"
+    },
+    {
+      "label": "PaginatedResponse",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "src_index_paginatedresponse",
+      "community": 9,
+      "norm_label": "paginatedresponse"
+    },
+    {
+      "label": "Agentic Coding Project Template",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "title",
+      "id": "agentic_project_template",
+      "community": 0,
+      "norm_label": "agentic coding project template"
+    },
+    {
+      "label": "Polyglot Monorepo Structure",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "Project Overview",
+      "id": "monorepo_structure",
+      "community": 0,
+      "norm_label": "polyglot monorepo structure"
+    },
+    {
+      "label": "Stack 1: Next.js + FastAPI",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Supported Stacks",
+      "id": "stack1",
+      "community": 1,
+      "norm_label": "stack 1: next.js + fastapi"
+    },
+    {
+      "label": "Stack 2: Next.js + tRPC + Prisma",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Supported Stacks",
+      "id": "stack2",
+      "community": 1,
+      "norm_label": "stack 2: next.js + trpc + prisma"
+    },
+    {
+      "label": "Stack 3: SvelteKit + Go/Gin",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Supported Stacks",
+      "id": "stack3",
+      "community": 1,
+      "norm_label": "stack 3: sveltekit + go/gin"
+    },
+    {
+      "label": "Stack 4: Vite/React + NestJS",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Supported Stacks",
+      "id": "stack4",
+      "community": 10,
+      "norm_label": "stack 4: vite/react + nestjs"
+    },
+    {
+      "label": "FastAPI Backend (Python)",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "FastAPI app",
+      "id": "fastapi_backend",
+      "community": 1,
+      "norm_label": "fastapi backend (python)"
+    },
+    {
+      "label": "NestJS Backend (TypeScript)",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "NestFactory",
+      "id": "nestjs_backend",
+      "community": 10,
+      "norm_label": "nestjs backend (typescript)"
+    },
+    {
+      "label": "Go/Gin Backend",
+      "file_type": "code",
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source_location": "gin.Default()",
+      "id": "go_backend",
+      "community": 1,
+      "norm_label": "go/gin backend"
+    },
+    {
+      "label": "Next.js Frontend (Stack 1 & 2)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Supported Stacks",
+      "id": "nextjs_frontend",
+      "community": 1,
+      "norm_label": "next.js frontend (stack 1 & 2)"
+    },
+    {
+      "label": "SvelteKit Frontend (Stack 3)",
+      "file_type": "code",
+      "source_file": "apps/frontend-sveltekit/src/routes/+page.svelte",
+      "source_location": "Svelte component",
+      "id": "sveltekit_frontend",
+      "community": 1,
+      "norm_label": "sveltekit frontend (stack 3)"
+    },
+    {
+      "label": "Vite + React Frontend (Stack 4)",
+      "file_type": "code",
+      "source_file": "apps/frontend-vite-react/src/App.tsx",
+      "source_location": "App component",
+      "id": "vite_react_frontend",
+      "community": 10,
+      "norm_label": "vite + react frontend (stack 4)"
+    },
+    {
+      "label": "PostgreSQL Database",
+      "file_type": "document",
+      "source_file": "docker-compose.yml",
+      "source_location": "postgres service",
+      "id": "postgresql_database",
+      "community": 1,
+      "norm_label": "postgresql database"
+    },
+    {
+      "label": "Redis Cache",
+      "file_type": "document",
+      "source_file": "docker-compose.yml",
+      "source_location": "redis service",
+      "id": "redis_cache",
+      "community": 1,
+      "norm_label": "redis cache"
+    },
+    {
+      "label": "Nginx Reverse Proxy",
+      "file_type": "document",
+      "source_file": "docker-compose.yml",
+      "source_location": "nginx service",
+      "id": "nginx_proxy",
+      "community": 1,
+      "norm_label": "nginx reverse proxy"
+    },
+    {
+      "label": "Docker Compose Orchestration",
+      "file_type": "document",
+      "source_file": "docker-compose.yml",
+      "source_location": "Full Stack Orchestration",
+      "id": "docker_compose_orchestration",
+      "community": 1,
+      "norm_label": "docker compose orchestration"
+    },
+    {
+      "label": "Shared Types Package (TypeScript)",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "index.ts",
+      "id": "shared_types_package",
+      "community": 0,
+      "norm_label": "shared types package (typescript)"
+    },
+    {
+      "label": "Agent Skills Framework",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Agent Skills Framework",
+      "id": "agent_skills_framework",
+      "community": 5,
+      "norm_label": "agent skills framework"
+    },
+    {
+      "label": "Skill: API Scaffold",
+      "file_type": "document",
+      "source_file": ".agent/skills/api-scaffold/SKILL.md",
+      "source_location": "name",
+      "id": "skill_api_scaffold",
+      "community": 5,
+      "norm_label": "skill: api scaffold"
+    },
+    {
+      "label": "Skill: TDD Workflow",
+      "file_type": "document",
+      "source_file": ".agent/skills/tdd-workflow/SKILL.md",
+      "source_location": "name",
+      "id": "skill_tdd_workflow",
+      "community": 5,
+      "norm_label": "skill: tdd workflow"
+    },
+    {
+      "label": "Skill: Code Review",
+      "file_type": "document",
+      "source_file": ".agent/skills/code-review/SKILL.md",
+      "source_location": "name",
+      "id": "skill_code_review",
+      "community": 2,
+      "norm_label": "skill: code review"
+    },
+    {
+      "label": "Skill: Docker Setup",
+      "file_type": "document",
+      "source_file": ".agent/skills/docker-setup/SKILL.md",
+      "source_location": "name",
+      "id": "skill_docker_setup",
+      "community": 7,
+      "norm_label": "skill: docker setup"
+    },
+    {
+      "label": "Skill: DB Migration",
+      "file_type": "document",
+      "source_file": ".agent/skills/db-migration/SKILL.md",
+      "source_location": "name",
+      "id": "skill_db_migration",
+      "community": 5,
+      "norm_label": "skill: db migration"
+    },
+    {
+      "label": "Skill: Frontend Scaffold",
+      "file_type": "document",
+      "source_file": ".agent/skills/frontend-scaffold/SKILL.md",
+      "source_location": "name",
+      "id": "skill_frontend_scaffold",
+      "community": 5,
+      "norm_label": "skill: frontend scaffold"
+    },
+    {
+      "label": "Skill: Data Exploration",
+      "file_type": "document",
+      "source_file": ".agent/skills/data-exploration/SKILL.md.md",
+      "source_location": "name",
+      "id": "skill_data_exploration",
+      "community": 3,
+      "norm_label": "skill: data exploration"
+    },
+    {
+      "label": "Skill: Editorial Data Visualization",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source_location": "name",
+      "id": "skill_dataviz",
+      "community": 3,
+      "norm_label": "skill: editorial data visualization"
+    },
+    {
+      "label": "Skill: Create Product Requirements Document",
+      "file_type": "document",
+      "source_file": ".agent/skills/create-product-requirements-document/SKILL.md.md",
+      "source_location": "name",
+      "id": "skill_create_prd",
+      "community": 14,
+      "norm_label": "skill: create product requirements document"
+    },
+    {
+      "label": "Workflow: /plan - Planning",
+      "file_type": "document",
+      "source_file": ".agent/workflows/plan.md",
+      "source_location": "command",
+      "id": "workflow_plan",
+      "community": 0,
+      "norm_label": "workflow: /plan - planning"
+    },
+    {
+      "label": "Workflow: /commit - Conventional Commit",
+      "file_type": "document",
+      "source_file": ".agent/workflows/commit.md",
+      "source_location": "command",
+      "id": "workflow_commit",
+      "community": 8,
+      "norm_label": "workflow: /commit - conventional commit"
+    },
+    {
+      "label": "Workflow: /review - Code Review",
+      "file_type": "document",
+      "source_file": ".agent/workflows/review.md",
+      "source_location": "command",
+      "id": "workflow_review",
+      "community": 2,
+      "norm_label": "workflow: /review - code review"
+    },
+    {
+      "label": "Roo Code Custom Modes",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Agentic Coding Setup",
+      "id": "roo_code_modes",
+      "community": 0,
+      "norm_label": "roo code custom modes"
+    },
+    {
+      "label": "Mode: Orchestrator (Boomerang Tasks)",
+      "file_type": "document",
+      "source_file": ".roo/rules-orchestrator/01-orchestrator-rules.md",
+      "source_location": "title",
+      "id": "orchestrator_mode",
+      "community": 0,
+      "norm_label": "mode: orchestrator (boomerang tasks)"
+    },
+    {
+      "label": "Mode: Stack Architect",
+      "file_type": "document",
+      "source_file": ".roo/rules-architect/01-architect-rules.md",
+      "source_location": "title",
+      "id": "architect_mode",
+      "community": 0,
+      "norm_label": "mode: stack architect"
+    },
+    {
+      "label": "Mode: Stack Coder",
+      "file_type": "document",
+      "source_file": ".roo/rules-code/01-code-rules.md",
+      "source_location": "title",
+      "id": "coder_mode",
+      "community": 0,
+      "norm_label": "mode: stack coder"
+    },
+    {
+      "label": "Mode: Debug",
+      "file_type": "document",
+      "source_file": ".roo/rules-debug/01-debug-rules.md",
+      "source_location": "title",
+      "id": "debug_mode",
+      "community": 0,
+      "norm_label": "mode: debug"
+    },
+    {
+      "label": "Mode: DevOps",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Available Modes",
+      "id": "devops_mode",
+      "community": 0,
+      "norm_label": "mode: devops"
+    },
+    {
+      "label": "Mode: Skill Creator",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Available Modes",
+      "id": "skill_creator_mode",
+      "community": 0,
+      "norm_label": "mode: skill creator"
+    },
+    {
+      "label": "Agentic AI Governance Policy",
+      "file_type": "document",
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source_location": "title",
+      "id": "ai_governance_policy",
+      "community": 2,
+      "norm_label": "agentic ai governance policy"
+    },
+    {
+      "label": "ISO 27001:2022 Compliance",
+      "file_type": "document",
+      "source_file": "security.md",
+      "source_location": "Vulnerability Management",
+      "id": "iso_27001",
+      "community": 2,
+      "norm_label": "iso 27001:2022 compliance"
+    },
+    {
+      "label": "ISO 38505-1:2022 Data Governance",
+      "file_type": "document",
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source_location": "Governance Framework Alignment",
+      "id": "iso_38505",
+      "community": 2,
+      "norm_label": "iso 38505-1:2022 data governance"
+    },
+    {
+      "label": "Security Policy (ISO 27001-aligned)",
+      "file_type": "document",
+      "source_file": "security.md",
+      "source_location": "title",
+      "id": "security_policy",
+      "community": 2,
+      "norm_label": "security policy (iso 27001-aligned)"
+    },
+    {
+      "label": "OWASP Top 10 Standards",
+      "file_type": "document",
+      "source_file": "security.md",
+      "source_location": "Secure Coding",
+      "id": "owasp_top10",
+      "community": 2,
+      "norm_label": "owasp top 10 standards"
+    },
+    {
+      "label": "Torro Agentic Coding Principles",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "title",
+      "id": "coding_principles",
+      "community": 8,
+      "norm_label": "torro agentic coding principles"
+    },
+    {
+      "label": "Radical Simplicity & Human Readability",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "1. Radical Simplicity",
+      "id": "radical_simplicity",
+      "community": 8,
+      "norm_label": "radical simplicity & human readability"
+    },
+    {
+      "label": "Layered Architecture Pattern",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "2. Architectural Alignment",
+      "id": "layered_architecture",
+      "community": 8,
+      "norm_label": "layered architecture pattern"
+    },
+    {
+      "label": "/api/v1/ Route Convention",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "Conventions",
+      "id": "api_v1_convention",
+      "community": 0,
+      "norm_label": "/api/v1/ route convention"
+    },
+    {
+      "label": "/health Endpoint Convention",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "API Contract",
+      "id": "health_endpoint",
+      "community": 1,
+      "norm_label": "/health endpoint convention"
+    },
+    {
+      "label": "Multi-stage Docker Builds",
+      "file_type": "document",
+      "source_file": ".roo/rules/03-docker-rules.md",
+      "source_location": "title",
+      "id": "multi_stage_builds",
+      "community": 7,
+      "norm_label": "multi-stage docker builds"
+    },
+    {
+      "label": "Gemini CLI Entry Point (GEMINI.md)",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "title",
+      "id": "gemini_cli_entry",
+      "community": 0,
+      "norm_label": "gemini cli entry point (gemini.md)"
+    },
+    {
+      "label": "4-Phase Gemini Protocol",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "Phase Protocol",
+      "id": "phase_protocol",
+      "community": 0,
+      "norm_label": "4-phase gemini protocol"
+    },
+    {
+      "label": "Project Backlog (docs/backlog.md)",
+      "file_type": "document",
+      "source_file": "docs/backlog.md",
+      "source_location": "title",
+      "id": "project_backlog",
+      "community": 0,
+      "norm_label": "project backlog (docs/backlog.md)"
+    },
+    {
+      "label": "Architecture Documentation",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "title",
+      "id": "architecture_docs",
+      "community": 0,
+      "norm_label": "architecture documentation"
+    },
+    {
+      "label": "Shared Utils Package",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "Architecture",
+      "id": "shared_utils_package",
+      "community": 27,
+      "norm_label": "shared utils package"
+    },
+    {
+      "label": "UI Components Package",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "Architecture",
+      "id": "ui_components_package",
+      "community": 29,
+      "norm_label": "ui components package"
+    },
+    {
+      "label": "Docker Dev Hot-Reload Overrides",
+      "file_type": "document",
+      "source_file": "docker-compose.dev.yml",
+      "source_location": "Development Overrides",
+      "id": "docker_dev_overrides",
+      "community": 7,
+      "norm_label": "docker dev hot-reload overrides"
+    },
+    {
+      "label": "Docker Healthcheck Convention",
+      "file_type": "document",
+      "source_file": ".roo/rules/03-docker-rules.md",
+      "source_location": "healthcheck",
+      "id": "healthcheck_convention",
+      "community": 7,
+      "norm_label": "docker healthcheck convention"
+    },
+    {
+      "label": "GitHub CI/CD Pipeline",
+      "file_type": "document",
+      "source_file": ".github/workflows/docker-publish.yml",
+      "source_location": "name",
+      "id": "github_ci_pipeline",
+      "community": 7,
+      "norm_label": "github ci/cd pipeline"
+    },
+    {
+      "label": "Shared TypeScript Interfaces (User, ApiResponse, ApiError, PaginatedResponse)",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "interfaces",
+      "id": "shared_types_interfaces",
+      "community": 0,
+      "norm_label": "shared typescript interfaces (user, apiresponse, apierror, paginatedresponse)"
+    },
+    {
+      "label": "PostgreSQL Init Script",
+      "file_type": "code",
+      "source_file": "infra/postgres/init.sql",
+      "source_location": "init.sql",
+      "id": "postgres_init_script",
+      "community": 1,
+      "norm_label": "postgresql init script"
+    },
+    {
+      "label": "Data Exploration Methodology",
+      "file_type": "document",
+      "source_file": ".agent/skills/data-exploration/SKILL.md.md",
+      "source_location": "Data Profiling Methodology",
+      "id": "data_exploration_methodology",
+      "community": 3,
+      "norm_label": "data exploration methodology"
+    },
+    {
+      "label": "Editorial Data Visualization Standards",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source_location": "Scope",
+      "id": "editorial_dataviz_standards",
+      "community": 3,
+      "norm_label": "editorial data visualization standards"
+    },
+    {
+      "label": "Chart Standards Reference",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/reference/Chart-Standards.md",
+      "source_location": "file",
+      "id": "chart_standards",
+      "community": 3,
+      "norm_label": "chart standards reference"
+    },
+    {
+      "label": "Map Standards Reference",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/reference/map-standards.md",
+      "source_location": "file",
+      "id": "map_standards",
+      "community": 3,
+      "norm_label": "map standards reference"
+    },
+    {
+      "label": "Interaction & Accessibility Standards",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/reference/interaction-and-accessibility.md",
+      "source_location": "file",
+      "id": "interaction_accessibility",
+      "community": 3,
+      "norm_label": "interaction & accessibility standards"
+    },
+    {
+      "label": "DataViz Format Templates",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/reference/format-templates.md",
+      "source_location": "file",
+      "id": "dataviz_format_templates",
+      "community": 3,
+      "norm_label": "dataviz format templates"
+    },
+    {
+      "label": "DataViz Output Contract",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/reference/output-contract.md",
+      "source_location": "file",
+      "id": "dataviz_output_contract",
+      "community": 3,
+      "norm_label": "dataviz output contract"
+    },
+    {
+      "label": "Example PRD Reference",
+      "file_type": "document",
+      "source_file": ".agent/skills/create-product-requirements-document/reference/example-prd.md.md",
+      "source_location": "file",
+      "id": "example_prd",
+      "community": 14,
+      "norm_label": "example prd reference"
+    },
+    {
+      "label": "FastAPI Python Dependencies",
+      "file_type": "document",
+      "source_file": "apps/backend-fastapi/requirements.txt",
+      "source_location": "file",
+      "id": "fastapi_requirements",
+      "community": 1,
+      "norm_label": "fastapi python dependencies"
+    },
+    {
+      "label": "Go Module Dependencies",
+      "file_type": "code",
+      "source_file": "apps/backend-go/go.mod",
+      "source_location": "module",
+      "id": "go_module",
+      "community": 18,
+      "norm_label": "go module dependencies"
+    },
+    {
+      "label": "NestJS AppModule",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source_location": "Module",
+      "id": "namespace_module",
+      "community": 21,
+      "norm_label": "nestjs appmodule"
+    },
+    {
+      "label": "NestJS HealthController",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/health.controller.ts",
+      "source_location": "Controller",
+      "id": "namespace_health_controller",
+      "community": 20,
+      "norm_label": "nestjs healthcontroller"
+    },
+    {
+      "label": "FastAPI /health Endpoint",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "health()",
+      "id": "fastapi_health_endpoint",
+      "community": 1,
+      "norm_label": "fastapi /health endpoint"
+    },
+    {
+      "label": "FastAPI /api/v1/ Root Endpoint",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "root()",
+      "id": "fastapi_api_root",
+      "community": 0,
+      "norm_label": "fastapi /api/v1/ root endpoint"
+    },
+    {
+      "label": "Go /health Endpoint",
+      "file_type": "code",
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source_location": "GET /health",
+      "id": "go_health_endpoint",
+      "community": 1,
+      "norm_label": "go /health endpoint"
+    },
+    {
+      "label": "Go /api/v1/ Root Endpoint",
+      "file_type": "code",
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source_location": "GET /api/v1/",
+      "id": "go_api_root",
+      "community": 0,
+      "norm_label": "go /api/v1/ root endpoint"
+    },
+    {
+      "label": "Package.json Workspace Config",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "name",
+      "id": "package_json_config",
+      "community": 23,
+      "norm_label": "package.json workspace config"
+    },
+    {
+      "label": "Project Context Rules (Always On)",
+      "file_type": "document",
+      "source_file": ".roo/rules/01-project-context.md",
+      "source_location": "title",
+      "id": "project_context_rules",
+      "community": 0,
+      "norm_label": "project context rules (always on)"
+    },
+    {
+      "label": "Coding Standards Rules (Always On)",
+      "file_type": "document",
+      "source_file": ".roo/rules/02-coding-standards.md",
+      "source_location": "title",
+      "id": "coding_standards_rules",
+      "community": 2,
+      "norm_label": "coding standards rules (always on)"
+    },
+    {
+      "label": "Docker Rules (Always On)",
+      "file_type": "document",
+      "source_file": ".roo/rules/03-docker-rules.md",
+      "source_location": "title",
+      "id": "docker_rules",
+      "community": 7,
+      "norm_label": "docker rules (always on)"
+    },
+    {
+      "label": "Conventional Commits Standard",
+      "file_type": "document",
+      "source_file": ".agent/workflows/commit.md",
+      "source_location": "Steps",
+      "id": "conventional_commits",
+      "community": 8,
+      "norm_label": "conventional commits standard"
+    },
+    {
+      "label": "Gemini 4-Phase Protocol: Understand \u00e2\u2020\u2019 Plan \u00e2\u2020\u2019 Implement \u00e2\u2020\u2019 Verify",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "Phase Protocol",
+      "id": "gemini_phase_protocol",
+      "community": 0,
+      "norm_label": "gemini 4-phase protocol: understand a\u2020\u2019 plan a\u2020\u2019 implement a\u2020\u2019 verify"
+    },
+    {
+      "label": "NestJS AppModule Class",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source_location": "AppModule",
+      "id": "app_module",
+      "community": 12,
+      "norm_label": "nestjs appmodule class"
+    },
+    {
+      "label": "NestJS HealthController Class",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/health.controller.ts",
+      "source_location": "HealthController",
+      "id": "health_controller",
+      "community": 12,
+      "norm_label": "nestjs healthcontroller class"
+    },
+    {
+      "label": "FastAPI Application Instance",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "FastAPI()",
+      "id": "fastapi_app",
+      "community": 13,
+      "norm_label": "fastapi application instance"
+    },
+    {
+      "label": "Go Gin Router",
+      "file_type": "code",
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source_location": "gin.Default()",
+      "id": "go_router",
+      "community": 19,
+      "norm_label": "go gin router"
+    },
+    {
+      "label": "NestJS ValidationPipe",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "ValidationPipe",
+      "id": "nestjs_validation_pipe",
+      "community": 22,
+      "norm_label": "nestjs validationpipe"
+    },
+    {
+      "label": "SvelteKit +page.svelte Component",
+      "file_type": "code",
+      "source_file": "apps/frontend-sveltekit/src/routes/+page.svelte",
+      "source_location": "component",
+      "id": "sveltekit_page",
+      "community": 28,
+      "norm_label": "sveltekit +page.svelte component"
+    },
+    {
+      "label": "React App Component (Vite)",
+      "file_type": "code",
+      "source_file": "apps/frontend-vite-react/src/App.tsx",
+      "source_location": "App",
+      "id": "react_app_component",
+      "community": 25,
+      "norm_label": "react app component (vite)"
+    },
+    {
+      "label": "NestJS Whitelist Validation",
+      "file_type": "code",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "{ whitelist: true }",
+      "id": "validationpipe_whitelist",
+      "community": 10,
+      "norm_label": "nestjs whitelist validation"
+    },
+    {
+      "label": "CORS Middleware (FastAPI & NestJS)",
+      "file_type": "code",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "CORSMiddleware",
+      "id": "cors_middleware",
+      "community": 13,
+      "norm_label": "cors middleware (fastapi & nestjs)"
+    },
+    {
+      "label": "Alembic DB Migrations (FastAPI)",
+      "file_type": "document",
+      "source_file": ".agent/skills/db-migration/SKILL.md",
+      "source_location": "Alembic (FastAPI)",
+      "id": "alembic_migrations",
+      "community": 5,
+      "norm_label": "alembic db migrations (fastapi)"
+    },
+    {
+      "label": "Prisma DB Migrations (NestJS)",
+      "file_type": "document",
+      "source_file": ".agent/skills/db-migration/SKILL.md",
+      "source_location": "Prisma (NestJS)",
+      "id": "prisma_migrations",
+      "community": 5,
+      "norm_label": "prisma db migrations (nestjs)"
+    },
+    {
+      "label": "golang-migrate (Go)",
+      "file_type": "document",
+      "source_file": ".agent/skills/db-migration/SKILL.md",
+      "source_location": "Raw SQL (Go)",
+      "id": "golang_migrate",
+      "community": 5,
+      "norm_label": "golang-migrate (go)"
+    },
+    {
+      "label": "TDD Cycle: Red \u00e2\u2020\u2019 Green \u00e2\u2020\u2019 Refactor",
+      "file_type": "document",
+      "source_file": ".agent/skills/tdd-workflow/SKILL.md",
+      "source_location": "TDD Cycle",
+      "id": "tdd_cycle",
+      "community": 5,
+      "norm_label": "tdd cycle: red a\u2020\u2019 green a\u2020\u2019 refactor"
+    },
+    {
+      "label": "Data Profiling: Structural Understanding Phase",
+      "file_type": "document",
+      "source_file": ".agent/skills/data-exploration/SKILL.md.md",
+      "source_location": "Phase 1",
+      "id": "data_profiling_phases",
+      "community": 3,
+      "norm_label": "data profiling: structural understanding phase"
+    },
+    {
+      "label": "DataViz Hard Gates: ONE hero visual carries the story",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source_location": "Step 0",
+      "id": "dataviz_hard_gates",
+      "community": 3,
+      "norm_label": "dataviz hard gates: one hero visual carries the story"
+    },
+    {
+      "label": "OWASP Input Validation Requirement",
+      "file_type": "document",
+      "source_file": "security.md",
+      "source_location": "Input Validation",
+      "id": "owasp_input_validation",
+      "community": 2,
+      "norm_label": "owasp input validation requirement"
+    },
+    {
+      "label": "Automated Secret Scanning",
+      "file_type": "document",
+      "source_file": "security.md",
+      "source_location": "Automated Scanning",
+      "id": "secret_scanning",
+      "community": 2,
+      "norm_label": "automated secret scanning"
+    },
+    {
+      "label": "Four-Eyes Peer Review Policy",
+      "file_type": "document",
+      "source_file": "security.md",
+      "source_location": "Authorization",
+      "id": "four_eyes_review",
+      "community": 2,
+      "norm_label": "four-eyes peer review policy"
+    },
+    {
+      "label": "AI Governance: 6 Control Domains",
+      "file_type": "document",
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source_location": "4. Control Domains",
+      "id": "llm_governance_domains",
+      "community": 2,
+      "norm_label": "ai governance: 6 control domains"
+    },
+    {
+      "label": "Local LLM Deployment Controls",
+      "file_type": "document",
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source_location": "Domain 1",
+      "id": "local_llm_deployment",
+      "community": 5,
+      "norm_label": "local llm deployment controls"
+    },
+    {
+      "label": "Coding Agent Controls",
+      "file_type": "document",
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source_location": "Domain 2",
+      "id": "coding_agent_controls",
+      "community": 5,
+      "norm_label": "coding agent controls"
+    },
+    {
+      "label": "Boomerang Task Decomposition",
+      "file_type": "document",
+      "source_file": ".roo/rules-orchestrator/01-orchestrator-rules.md",
+      "source_location": "Boomerang Tasks",
+      "id": "boomerang_tasks",
+      "community": 0,
+      "norm_label": "boomerang task decomposition"
+    },
+    {
+      "label": "DataViz Reference Material Collection",
+      "file_type": "document",
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source_location": "Reference material",
+      "id": "dataviz_reference_material",
+      "community": 3,
+      "norm_label": "dataviz reference material collection"
+    },
+    {
+      "label": ".env.example Template",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Quick Start",
+      "id": "environ_template",
+      "community": 17,
+      "norm_label": ".env.example template"
+    },
+    {
+      "label": "All 4 Stack Configurations",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "System Overview",
+      "id": "all_stacks",
+      "community": 1,
+      "norm_label": "all 4 stack configurations"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_main",
+      "target": "app_main_health",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_main",
+      "target": "app_main_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "server_main",
+      "target": "server_main_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_module",
+      "target": "src_app_module_appmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_module",
+      "target": "src_health_controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_module",
+      "target": "src_health_controller_healthcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "src_app_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "src_app_module_appmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/health.controller.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_health_controller",
+      "target": "src_health_controller_healthcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/health.controller.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_health_controller_healthcontroller",
+      "target": "src_health_controller_healthcontroller_health",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "src_main_bootstrap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/frontend-vite-react/src/App.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_workspaces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev_stack1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev_stack3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev_stack4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_down",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_up",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_index_apierror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_index_apiresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_index_paginatedresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_index_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agentic_project_template",
+      "target": "agent_skills_framework"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENT.md",
+      "source": "agentic_project_template",
+      "target": "ai_governance_policy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENT.md",
+      "source": "agentic_project_template",
+      "target": "coding_principles"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agentic_project_template",
+      "target": "docker_compose_orchestration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agentic_project_template",
+      "target": "gemini_cli_entry"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agentic_project_template",
+      "target": "monorepo_structure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agentic_project_template",
+      "target": "roo_code_modes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source": "agentic_project_template",
+      "target": "shared_types_package"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture.md",
+      "source": "architecture_docs",
+      "target": "agentic_project_template"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/backlog.md",
+      "source": "project_backlog",
+      "target": "agentic_project_template"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack1",
+      "target": "fastapi_backend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack1",
+      "target": "nextjs_frontend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack1",
+      "target": "postgresql_database"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml",
+      "source": "stack1",
+      "target": "redis_cache"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack2",
+      "target": "nextjs_frontend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack3",
+      "target": "go_backend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack3",
+      "target": "postgresql_database"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack3",
+      "target": "sveltekit_frontend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack4",
+      "target": "nestjs_backend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack4",
+      "target": "postgresql_database"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "stack4",
+      "target": "vite_react_frontend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-fastapi/requirements.txt",
+      "source": "fastapi_requirements",
+      "target": "fastapi_backend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-nestjs/src/main.ts",
+      "source": "nestjs_backend",
+      "target": "validationpipe_whitelist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture.md",
+      "source": "all_stacks",
+      "target": "postgresql_database"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml",
+      "source": "docker_compose_orchestration",
+      "target": "postgresql_database"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "infra/postgres/init.sql",
+      "source": "postgres_init_script",
+      "target": "postgresql_database"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture.md",
+      "source": "all_stacks",
+      "target": "redis_cache"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml",
+      "source": "docker_compose_orchestration",
+      "target": "redis_cache"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture.md",
+      "source": "all_stacks",
+      "target": "nginx_proxy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml",
+      "source": "docker_compose_orchestration",
+      "target": "nginx_proxy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture.md",
+      "source": "all_stacks",
+      "target": "docker_compose_orchestration"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".github/workflows/docker-publish.yml",
+      "source": "github_ci_pipeline",
+      "target": "docker_compose_orchestration"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/shared-types/src/index.ts",
+      "source": "shared_types_interfaces",
+      "target": "shared_types_package"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agent_skills_framework",
+      "target": "skill_api_scaffold"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agent_skills_framework",
+      "target": "skill_code_review"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agent_skills_framework",
+      "target": "skill_db_migration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agent_skills_framework",
+      "target": "skill_docker_setup"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agent_skills_framework",
+      "target": "skill_frontend_scaffold"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "agent_skills_framework",
+      "target": "skill_tdd_workflow"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source": "coding_agent_controls",
+      "target": "agent_skills_framework"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/api-scaffold/SKILL.md",
+      "source": "skill_api_scaffold",
+      "target": "api_v1_convention"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/api-scaffold/SKILL.md",
+      "source": "skill_api_scaffold",
+      "target": "skill_tdd_workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/tdd-workflow/SKILL.md",
+      "source": "skill_tdd_workflow",
+      "target": "tdd_cycle"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".agent/skills/code-review/SKILL.md",
+      "source": "skill_code_review",
+      "target": "coding_standards_rules"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".agent/skills/code-review/SKILL.md",
+      "source": "skill_code_review",
+      "target": "four_eyes_review"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/code-review/SKILL.md",
+      "source": "skill_code_review",
+      "target": "owasp_top10"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/workflows/review.md",
+      "source": "workflow_review",
+      "target": "skill_code_review"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/docker-setup/SKILL.md",
+      "source": "skill_docker_setup",
+      "target": "docker_dev_overrides"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/docker-setup/SKILL.md",
+      "source": "skill_docker_setup",
+      "target": "healthcheck_convention"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/docker-setup/SKILL.md",
+      "source": "skill_docker_setup",
+      "target": "multi_stage_builds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/db-migration/SKILL.md",
+      "source": "skill_db_migration",
+      "target": "alembic_migrations"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/db-migration/SKILL.md",
+      "source": "skill_db_migration",
+      "target": "golang_migrate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/db-migration/SKILL.md",
+      "source": "skill_db_migration",
+      "target": "prisma_migrations"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/data-exploration/SKILL.md.md",
+      "source": "skill_data_exploration",
+      "target": "data_exploration_methodology"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "skill_dataviz",
+      "target": "skill_data_exploration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "skill_dataviz",
+      "target": "dataviz_hard_gates"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "skill_dataviz",
+      "target": "dataviz_reference_material"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "skill_dataviz",
+      "target": "editorial_dataviz_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/create-product-requirements-document/SKILL.md.md",
+      "source": "skill_create_prd",
+      "target": "example_prd"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "GEMINI.md",
+      "source": "gemini_cli_entry",
+      "target": "workflow_plan"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "GEMINI.md",
+      "source": "gemini_phase_protocol",
+      "target": "workflow_plan"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".agent/workflows/plan.md",
+      "source": "workflow_plan",
+      "target": "boomerang_tasks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/workflows/commit.md",
+      "source": "workflow_commit",
+      "target": "conventional_commits"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "roo_code_modes",
+      "target": "architect_mode"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "roo_code_modes",
+      "target": "coder_mode"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "roo_code_modes",
+      "target": "debug_mode"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "roo_code_modes",
+      "target": "devops_mode"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "roo_code_modes",
+      "target": "orchestrator_mode"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "roo_code_modes",
+      "target": "skill_creator_mode"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".roo/rules-orchestrator/01-orchestrator-rules.md",
+      "source": "orchestrator_mode",
+      "target": "boomerang_tasks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".roo/rules-architect/01-architect-rules.md",
+      "source": "architect_mode",
+      "target": "architecture_docs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".roo/rules-code/01-code-rules.md",
+      "source": "coder_mode",
+      "target": "api_v1_convention"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source": "ai_governance_policy",
+      "target": "iso_27001"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source": "ai_governance_policy",
+      "target": "iso_38505"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source": "ai_governance_policy",
+      "target": "llm_governance_domains"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "security.md",
+      "source": "security_policy",
+      "target": "iso_27001"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "security.md",
+      "source": "security_policy",
+      "target": "four_eyes_review"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "security.md",
+      "source": "security_policy",
+      "target": "owasp_input_validation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "security.md",
+      "source": "security_policy",
+      "target": "owasp_top10"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "security.md",
+      "source": "security_policy",
+      "target": "secret_scanning"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENT.md",
+      "source": "coding_principles",
+      "target": "conventional_commits"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENT.md",
+      "source": "coding_principles",
+      "target": "layered_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENT.md",
+      "source": "coding_principles",
+      "target": "radical_simplicity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture.md",
+      "source": "all_stacks",
+      "target": "api_v1_convention"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source": "fastapi_api_root",
+      "target": "api_v1_convention"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source": "go_api_root",
+      "target": "api_v1_convention"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/architecture.md",
+      "source": "all_stacks",
+      "target": "health_endpoint"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source": "fastapi_health_endpoint",
+      "target": "health_endpoint"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-go/cmd/server/main.go",
+      "source": "go_health_endpoint",
+      "target": "health_endpoint"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".roo/rules/03-docker-rules.md",
+      "source": "docker_rules",
+      "target": "multi_stage_builds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/workflows/docker-publish.yml",
+      "source": "github_ci_pipeline",
+      "target": "multi_stage_builds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GEMINI.md",
+      "source": "gemini_cli_entry",
+      "target": "phase_protocol"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GEMINI.md",
+      "source": "gemini_cli_entry",
+      "target": "project_context_rules"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "GEMINI.md",
+      "source": "gemini_phase_protocol",
+      "target": "phase_protocol"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".roo/rules/01-project-context.md",
+      "source": "project_context_rules",
+      "target": "project_backlog"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".roo/rules/03-docker-rules.md",
+      "source": "docker_rules",
+      "target": "healthcheck_convention"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/data-exploration/SKILL.md.md",
+      "source": "data_exploration_methodology",
+      "target": "data_profiling_phases"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "editorial_dataviz_standards",
+      "target": "chart_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "editorial_dataviz_standards",
+      "target": "dataviz_format_templates"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "editorial_dataviz_standards",
+      "target": "dataviz_output_contract"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "editorial_dataviz_standards",
+      "target": "interaction_accessibility"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md",
+      "source": "editorial_dataviz_standards",
+      "target": "map_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-nestjs/src/app.module.ts",
+      "source": "app_module",
+      "target": "health_controller"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/backend-fastapi/app/main.py",
+      "source": "fastapi_app",
+      "target": "cors_middleware"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "Agentic_AI_Governance_Policy.md",
+      "source": "local_llm_deployment",
+      "target": "coding_agent_controls"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "four_stacks_hyperedge",
+      "label": "Four Full-Stack Configurations",
+      "nodes": [
+        "stack1",
+        "stack2",
+        "stack3",
+        "stack4"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    },
+    {
+      "id": "agent_modes_hyperedge",
+      "label": "Roo Code Agent Modes",
+      "nodes": [
+        "orchestrator_mode",
+        "architect_mode",
+        "coder_mode",
+        "debug_mode",
+        "devops_mode",
+        "skill_creator_mode"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    },
+    {
+      "id": "shared_infrastructure_hyperedge",
+      "label": "Shared Infrastructure Services",
+      "nodes": [
+        "postgresql_database",
+        "redis_cache",
+        "nginx_proxy"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml"
+    },
+    {
+      "id": "dataviz_references_hyperedge",
+      "label": "DataViz Reference Standards",
+      "nodes": [
+        "chart_standards",
+        "map_standards",
+        "interaction_accessibility",
+        "dataviz_format_templates",
+        "dataviz_output_contract"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/dataviz/SKILL.md.md"
+    },
+    {
+      "id": "agent_workflows_hyperedge",
+      "label": "Agent Slash Command Workflows",
+      "nodes": [
+        "workflow_plan",
+        "workflow_commit",
+        "workflow_review"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/workflows"
+    },
+    {
+      "id": "governance_frameworks_hyperedge",
+      "label": "Governance & Security Frameworks",
+      "nodes": [
+        "iso_27001",
+        "iso_38505",
+        "owasp_top10"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "security.md"
+    },
+    {
+      "id": "backend_implementations_hyperedge",
+      "label": "All Backend Implementations",
+      "nodes": [
+        "fastapi_backend",
+        "nestjs_backend",
+        "go_backend"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    },
+    {
+      "id": "db_migration_tools_hyperedge",
+      "label": "Database Migration Tools",
+      "nodes": [
+        "alembic_migrations",
+        "prisma_migrations",
+        "golang_migrate"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agent/skills/db-migration/SKILL.md"
+    }
+  ],
+  "built_at_commit": "cee15f068f515981bc9a1c424dffcd586c39e4b8"
+}
