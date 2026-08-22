@@ -4,13 +4,14 @@ description: >
   Test-Driven Development workflow for any service in this monorepo.
   Use when implementing a new feature, fixing a bug, or adding an API endpoint.
   Covers TypeScript (Jest/Vitest), Python (pytest), and Go (testing package).
-compatibility: Node.js 22+, Python 3.13+, Go 1.22+
 metadata:
   version: "1.0"
   author: agentic-project-template
 ---
 
 # TDD Workflow Skill
+
+**Compatibility:** Node.js 22+, Python 3.13+, Go 1.22+
 
 ## TDD Cycle: Red → Green → Refactor
 

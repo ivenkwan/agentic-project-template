@@ -4,13 +4,14 @@ description: >
   Scaffold a new Docker Compose service for any of the 4 supported stacks.
   Use when adding a new service, containerizing an existing app, or configuring
   multi-stage Dockerfiles with health checks and hot-reload dev overrides.
-compatibility: Docker Compose v2+, multi-stage builds, Alpine-based images
 metadata:
   version: "1.0"
   author: agentic-project-template
 ---
 
 # Docker Setup Skill
+
+**Compatibility:** Docker Compose v2+, multi-stage builds, Alpine-based images
 
 ## When to Use
 Activate when: creating a new Dockerfile, modifying docker-compose.yml,
