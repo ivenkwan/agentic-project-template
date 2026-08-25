@@ -16,12 +16,5 @@
     "build": "docker compose build",
     "up": "docker compose --profile ${ACTIVE_STACK:-stack1} up",
     "down": "docker compose down"
-  },
-  "dependencies": {
-    "pptxgenjs": "^4.0.1",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-icons": "^5.7.0",
-    "sharp": "^0.35.3"
   }
 }
